@@ -21,8 +21,15 @@
     height: 100vh;
 }
 .first-half img{
-    width: 200px;
+    width: 80px;
     
+}
+.first-half h2{
+    color: white;
+    font-size: 20px;
+}
+.header-image{
+    display: flex;
 }
 .second-half {
     background-color: blue;
