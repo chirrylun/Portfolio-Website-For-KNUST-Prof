@@ -169,13 +169,35 @@
 
 
 .bio{
-  height: 100vh;
-  
+  height: fit-content;
+  display: flex;
+  justify-content: center;
   
 }
 .bio-text{
-  text-align: center;
+  padding-top: 70px;
+  text-align: left;
+  
+  width: 800px;
+}
+.bio-text h3{
+  font-size: 27px;
+  padding-bottom: 30px;
+}
+.bio-text p{
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+.speech{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}.speech-image{
+  padding: 10px 235px;
+}
+.speech-image img{
   width: 300px;
-
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.1),
+      5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
 }
 
