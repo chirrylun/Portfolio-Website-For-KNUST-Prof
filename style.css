@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 .cover {
-  padding: 0px 60px;
   height: 100vh;
 }
 .intro {
@@ -16,13 +15,14 @@
   background-image: linear-gradient(to top, #0060fb 0%, #2363cb 100%);
   width: 45vw;
   height: 100vh;
-  justify-content: space-between;
+
   display: flex;
   flex-direction: column;
 }
 .first-half img {
   width: 80px;
   margin-right: 10px;
+  margin-bottom: 40px;
 }
 .first-half h2 {
   color: white;
@@ -32,73 +32,150 @@
   display: flex;
   align-items: center;
   padding: 30px 40px;
+  margin-bottom: 45px;
+}
+.header-image img{
+  margin: 0;
+}
+.header-image h2{
+  margin-left: 10px;
 }
 .second-half {
-background-image: linear-gradient(to top, #0060fb 0%, #2363cb 100%);
+  background-image: linear-gradient(to top, #0060fb 0%, #2363cb 100%);
   width: 55vw;
   height: 100vh;
 }
 .cover-image {
-  width: 650px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/Images/cover.jpg);
+  width: 704px;
+  height: 100vh;
 }
 .cover-image img {
   width: 100%;
 }
-.second-intro h1{
-    font-size: 50px;
-    color: white;
+.second-intro h1 {
+  font-size: 50px;
+  color: white;
+}
+.second-intro {
+  padding: 0px 40px;
+}
+.second-intro p {
+  color: white;
+  font-weight: 200;
+  padding-bottom: 10px;
+}
+.second-intro button {
+  background-color: white;
+  color: #0060fb;
+  border: none;
+  outline: none;
+  padding: 13px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.1),
+    5px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  margin-bottom: 75px;
+}
+.second-intro button:hover {
+  color: white;
+  background-color: #0060fb;
+  border-style: solid;
+  border-width: 1;
+  letter-spacing: 1px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  padding: 0px 40px;
+}
+.social i {
+  color: white;
+  font-size: 35px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  transition: 0.3s ease;
+  transform: translateY(0px);
+}
+.social i:hover {
+  transition: 0.3s ease;
+  transform: translateY(-5px);
+}
+.creds {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  padding: 0px 15px;
+}
+.creds ul {
+  padding-bottom: 20px;
+}
+.creds ul li {
+  color: white;
+}
+.nav-bar {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+}
+.nav-bar ul li {
+  margin: 18px;
+}
+.nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 200;
+  transition: 0.2s ease;
+}
+.nav-bar ul li a:hover {
+  color: #0060fb;
+  font-weight: bolder;
+}
+.nav-bar i {
+  margin-right: 7px;
+  font-size: 15px;
+}
+.guide {
+  padding: 450px 60px;
+  display: flex;
+  align-items: center;
+}
+.guide h2 {
+  color: white;
+  font-size: 20px;
+}
+.guide i {
+  font-size: 60px;
+  color: white;
+  margin-right: 20px;
+  transition: 0.3s ease;
+  transform: translateX(0);
+}
+.guide i:hover {
+  color: #0060fb;
+  transition: 0.3s ease;
+  transform: translateX(-5px);
+  
+}
+
+
+.bio{
+  height: 100vh;
+  
+  
+}
+.bio-text{
+  text-align: center;
+  width: 300px;
 
 }
-.second-intro{
-    padding: 0px 40px;
-}
-.second-intro p{
-    color: white;
-    font-weight: 200;
-    padding-bottom: 20px;
-}
-.second-intro button{
-    background-color: white;
-    color: #0060fb;
-    border: none;
-    outline: none;
-    padding: 13px;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: 700;
-    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.1), 5px 5px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.3s ease;
-}
-.second-intro button:hover{
-    color: white;
-    background-color: #0060fb;
-    border-style: solid;
-    border-width: 1;
-    letter-spacing: 1px;
 
-}
-.social{
-    display: flex;
-    align-items: center;
-    padding: 0px 40px;
-}
-.social i{
-    color: white;
-    font-size: 35px;
-    padding-right: 15px;
-    padding-bottom: 30px;
-    transition: 0.3s ease;
-    transform: translateY(0px);
-}
-.social i:hover{
-    transition: 0.3s ease;
-        transform: translateY(-5px);
-
-
-}
-.creds{
-    padding: 10px 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-
-}
