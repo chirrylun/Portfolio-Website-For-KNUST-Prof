@@ -408,3 +408,20 @@ transition: 0.3s ease;
 }
 
 
+.contact-nav{
+  display: flex;
+}
+.contact-nav ul{
+  display: flex;
+  list-style: none;
+}
+.contact-nav ul li{
+  margin: 15px;
+
+}
+.contact-nav ul li a{
+  color: #0060fb;
+}
+
+
+
