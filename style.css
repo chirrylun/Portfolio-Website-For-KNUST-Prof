@@ -14,7 +14,7 @@
 .first-half {
   background-image: linear-gradient(to top, #0060fb 0%, #2363cb 100%);
   width: 45vw;
-  height: 100vh;
+  height: 88vh;
 
   display: flex;
   flex-direction: column;
@@ -43,14 +43,14 @@
 .second-half {
   background-image: linear-gradient(to top, #0060fb 0%, #2363cb 100%);
   width: 55vw;
-  height: 100vh;
+  height: 88vh;
 }
 .cover-image {
   background-position: center;
   background-size: cover;
   background-image: url(/Images/cover.jpg);
   width: 840px;
-  height: 100vh;
+  height: 88vh;
 }
 .cover-image img {
   width: 100%;
@@ -79,7 +79,7 @@
   box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.1),
     5px 5px 10px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease;
-  margin-bottom: 75px;
+  margin-bottom: 120px;
 }
 .second-intro button:hover {
   color: white;
@@ -144,8 +144,12 @@
   margin-right: 7px;
   font-size: 15px;
 }
+.nav-bar ul li a.active {
+  color: #0060fb; /* Change the color for the active link */
+  font-weight: 700; /* Add bold font-weight to the active link */
+}
 .guide {
-  padding: 590px 60px;
+  padding: 500px 60px;
   display: flex;
   align-items: center;
 }
@@ -175,7 +179,7 @@
   
 }
 .bio-text{
-  padding-top: 70px;
+
   text-align: left;
   color: #011b44;
   
@@ -387,6 +391,19 @@ transition: 0.3s ease;
 }
 .contact-but, .resume-but{
   letter-spacing: 1px;
+  transition: 0.2s ease;
+}
+.contact-but a{
+  color: #011b44;
+  
+}
+.resume-but a{
+  color: white;
+  transform: translateY(0);
+  transition: 0.2s ease;
+}
+.resume-but:hover, .contact-but:hover{
+  transform: translateY(-5px);
   transition: 0.2s ease;
 }
 
