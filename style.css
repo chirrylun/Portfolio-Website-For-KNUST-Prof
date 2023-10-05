@@ -409,19 +409,98 @@ transition: 0.3s ease;
 
 
 .contact-nav{
+  justify-content: center;
   display: flex;
+  width: 100%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+ 
+ 
+}
+.contact-nav img{
+  width: 70px;
 }
 .contact-nav ul{
+  padding: 10px ;
+  align-items: center;
   display: flex;
   list-style: none;
+ 
 }
 .contact-nav ul li{
-  margin: 15px;
+  align-content: center;
+  
+  margin: 15px 80px;
 
 }
 .contact-nav ul li a{
+  
   color: #0060fb;
 }
+.contact-nav ul li a.active {
+  color: #0060fb; /* Change the color for the active link */
+  font-weight: bold; /* Add bold font-weight to the active link */
+}
+.contact-nav ul li i{
+  color: #0060fb;
+  margin-right: 7px;
+}
+.contact-body{
+  background-color: #0060fb;
+  text-align: center;
+  height: 100vh;
+ 
+}
+.contact-image{
+  width: 300px;
+  margin-right: 60px;
+}
+.contact-image img{
+  border-radius: 10px;
+  width: 300px;
+}
+.contact-text{
+  padding: 40px 0px;
+  color: white;
 
 
+}
+.contact-text h2{
+  
+  font-size: 50px;
+
+}
+.contact-icons{
+  padding: 40px 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem;
+}
+.icon{
+  color: #011b44;
+  font-size: 50px;
+
+}
+.icon-text{
+  color: white;
+}
+.icon-text h3{
+  font-size: 27px;
+  padding-bottom: 20px;
+}
+.icon-text p{
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.icon-text ul{
+  padding: 15px 0px;
+  list-style: none;
+ 
+}
+.icon-text ul li{
+  padding-bottom: 40px;
+  font-weight: 200;
+}
+.contact-end{
+  background-color: red;
+}
 
