@@ -377,18 +377,25 @@ span {
 .pub-footer {
   height: 150px;
   background-color: #011b44;
+  align-items: center;
 }
 .footer-content {
-  padding: 40px 60px;
+  padding: 40px 160px;
   align-items: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .pub-footer-content {
-  padding: 40px 60px;
+  padding: 30px  160px;
   align-items: center;
   display: grid;
+
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.pub-contact{
+  width: 700px;
+  height: fit-content;
+
 }
 .pub-contact h2 {
   color: white;
@@ -560,18 +567,42 @@ span {
 .pub-start h2 {
   font-size: 30px;
 }
-.pub-start hr {
+.fellowships{
   height: 7px;
   background-color: #011b44;
   border: none;
   outline: none;
-  width: 200px;
+  width: 600px;
+}
+.programs{
+  height: 7px;
+  background-color: #011b44;
+  border: none;
+  outline: none;
+  width: 160px;
+}
+.workshops{
+  height: 7px;
+  background-color: #011b44;
+  border: none;
+  outline: none;
+  width: 185px;
+}
+.pub-line{
+  height: 7px;
+  background-color: #011b44;
+  border: none;
+  outline: none;
+  width: 510px;
+
 }
 .pubs-list {
   padding: 0px 17% 0px;
   display: flex;
   margin-bottom: 50px;
+  
 }
+
 .pubs-list hr {
   height: 7px;
   background-color: #011b44;
@@ -582,19 +613,26 @@ span {
 }
 .pubs-text {
   margin-right: 100px;
-  width: 300px;
+  
   color: #011b44;
 }
+
 .pubs-text h3 {
   font-size: 17px;
+  width: 300px;
 }
 .pubs-content {
   width: 800px;
   color: #011b44;
+  display: block;
 }
 .pubs-content h3 {
   margin-bottom: 10px;
 }
+.pubs-content p{
+  font-weight: 300;
+}
+
 
 .read-more {
   margin-top: 10px;
