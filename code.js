@@ -61,7 +61,7 @@ function _f2(id) {
 }
 
 function toggleShiwContent() {
-    let div = _f2('maindiv-research');
+    let div = _f2('maindiv-grants');
     let shiw = _f2('shiw');
 
     if (div.className === 'cls2') {
@@ -75,3 +75,23 @@ function toggleShiwContent() {
 
 // Attach the click event listener to the "shaw" element
 _f1('shiw').onclick = toggleShiwContent;
+
+function _f3(id) {
+    return document.getElementById(id)
+}
+
+function toggleShewContent() {
+    let div = _f2('maindiv-research');
+    let shew = _f2('shew');
+
+    if (div.className === 'cls3') {
+        div.className = '';
+        shew.innerHTML = 'Show more...'
+    } else {
+        div.className = 'cls3';
+        shew.innerHTML = 'Show less...'
+    }
+}
+
+// Attach the click event listener to the "shaw" element
+_f1('shew').onclick = toggleShewContent;
