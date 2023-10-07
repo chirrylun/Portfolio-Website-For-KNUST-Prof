@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-span{
+span {
   font-weight: bolder;
   color: #0060fb;
 }
@@ -72,9 +72,13 @@ span{
   font-weight: 200;
   padding-bottom: 20px;
 }
+.second-intro button a{
+  color: #011b44;
+
+}
 .second-intro button {
   background-color: white;
-  color: #011b44;
+
   border: none;
   outline: none;
   padding: 13px;
@@ -259,19 +263,22 @@ span{
 .event2 {
   background-position: center;
   background-size: cover;
-  background-image: url(/Images/event2\\(2\).jpg);
+  background-image: url(/Images/event2\ \(2\).jpg);
   height: 300px;
   width: 450px;
   border-radius: 10px;
 }
+
 .event3 {
   background-position: center;
   background-size: cover;
-  background-image: url(/Images/event2\\(1\).jpg);
+  background-image: url(/Images/event2\ \(1\).jpg);
   height: 300px;
   width: 450px;
   border-radius: 10px;
 }
+
+
 .event1:hover button,
 .event2:hover button,
 .event3:hover button {
@@ -333,6 +340,9 @@ span{
   color: #011b44;
   font-weight: 700;
   transition: 0.3s ease;
+}
+.pub-header p {
+  font-weight: 700;
 }
 .pub-header p a:hover {
   letter-spacing: 0.5px;
@@ -604,21 +614,17 @@ span{
 }
 .events-text h3 {
   margin-top: 30px;
-
 }
-.events-text-end h3{
+.events-text-end h3 {
   margin-top: 30px;
- 
 }
 .event-points {
   padding: 0px 17% 0px;
- 
 }
 .event-points ul li {
   margin-bottom: 10px;
 }
 .event-points-end {
-
   padding: 0px 17% 0px;
 }
 .view-more {
@@ -631,15 +637,15 @@ span{
   margin-bottom: 20px;
   font-weight: bolder;
 }
-.view-more:hover{
+.view-more:hover {
   letter-spacing: 0.5px;
   transition: 0.2s ease;
 }
-.view-more1:hover{
+.view-more1:hover {
   letter-spacing: 0.5px;
   transition: 0.2s ease;
 }
-.span{
+.span {
   font-weight: bolder;
 }
 #maindiv {
