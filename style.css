@@ -248,6 +248,7 @@ span {
   padding: 50px 60px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
 }
 .event-list button a {
   color: white;
@@ -497,7 +498,8 @@ span {
 }
 .contact-body {
   background-color: #011b44;
-  text-align: left;
+  text-align: center;
+
   height: 100vh;
 }
 .contact-image {
@@ -509,17 +511,20 @@ span {
   width: 300px;
 }
 .contact-text {
-  margin-left: 80px;
-  padding-top: 70px;
+ 
+  padding-top: 120px;
   color: white;
-  text-align: left;
-  width: 600px;
+  text-align: center;
+  
+  justify-content: center;
+
 }
 .contact-text h2 {
   font-size: 40px;
+  
 }
 .contact-icons {
-  padding: 40px 80px;
+  padding: 60px 100px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 4rem;
@@ -531,9 +536,12 @@ span {
 .icon-text {
   color: white;
 }
+.icon-text a{
+  color: white;
+}
 .icon-text h3 {
   font-size: 20px;
-  padding-bottom: 20px;
+
 }
 .icon-text p {
   font-weight: 600;
@@ -566,27 +574,28 @@ span {
 }
 .pub-start h2 {
   font-size: 30px;
+  color: #011b44;
 }
 .fellowships{
   height: 7px;
   background-color: #011b44;
   border: none;
   outline: none;
-  width: 600px;
+  width: 587px;
 }
 .programs{
   height: 7px;
   background-color: #011b44;
   border: none;
   outline: none;
-  width: 160px;
+  width: 152px;
 }
 .workshops{
   height: 7px;
   background-color: #011b44;
   border: none;
   outline: none;
-  width: 185px;
+  width: 175px;
 }
 .pub-line{
   height: 7px;
@@ -594,12 +603,14 @@ span {
   border: none;
   outline: none;
   width: 510px;
+  color: #011b44;
 
 }
 .pubs-list {
   padding: 0px 17% 0px;
   display: flex;
   margin-bottom: 50px;
+  color: #011b44;
   
 }
 
@@ -620,6 +631,7 @@ span {
 .pubs-text h3 {
   font-size: 17px;
   width: 300px;
+  color: #011b44;
 }
 .pubs-content {
   width: 800px;
@@ -628,9 +640,11 @@ span {
 }
 .pubs-content h3 {
   margin-bottom: 10px;
+  color: #011b44;
 }
 .pubs-content p{
   font-weight: 300;
+  color: #011b44;
 }
 
 
@@ -646,21 +660,35 @@ span {
 }
 .events-text {
   padding: 0px 17% 0px;
+  color: #011b44;
+}
+.top-events-text {
+  margin-bottom: 40px;
+  padding: 30px 17% 0px;
+  color: #011b44;
 }
 .events-text-end {
   padding: 0px 17% 0px;
+  color: #011b44;
 }
 .events-text h3 {
   margin-top: 30px;
+  color: #011b44;
 }
 .events-text-end h3 {
   margin-top: 30px;
+  
 }
 .event-points {
   padding: 0px 17% 0px;
 }
 .event-points ul li {
   margin-bottom: 10px;
+  color: #011b44;
+}
+.event-points-end ul li {
+  margin-bottom: 10px;
+  color: #011b44;
 }
 .event-points-end {
   padding: 0px 17% 0px;
@@ -669,11 +697,13 @@ span {
   padding: 0px 17% 0px;
   margin-bottom: 100px;
   font-weight: bolder;
+  color: #011b44;
 }
 .view-more1 {
   padding: 0px 17% 0px;
   margin-bottom: 20px;
   font-weight: bolder;
+  color: #011b44;
 }
 .view-more:hover {
   letter-spacing: 0.5px;
