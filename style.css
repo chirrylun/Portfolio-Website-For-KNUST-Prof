@@ -69,7 +69,7 @@ span {
 }
 .second-intro p {
   color: white;
-  font-weight: 200;
+  font-weight: 300;
   padding-bottom: 20px;
 }
 .second-intro button a{
@@ -199,12 +199,14 @@ span {
 }
 .speech {
   color: #011b44;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  
   padding-bottom: 70px;
 }
 .speech-image {
-  padding: 10px 315px;
+
+  margin-left: 308px;
+  margin-right: 50px;
 }
 .speech-image img {
   border-radius: 10px;
@@ -238,7 +240,8 @@ span {
   color: white;
 }
 .speech-other i {
-  margin-bottom: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .events-header {
   color: #011b44;
@@ -340,6 +343,10 @@ span {
 .pub-header{
   height: fit-content;
 }
+.pub-header a{
+  color: #011b44;
+}
+
 .pub-header-end .pub-header p a {
   color: #011b44;
   font-weight: 700;
@@ -348,9 +355,13 @@ span {
 .pub-header p {
   font-weight: 700;
 }
+.pub-header p a{
+  transition: 0.2s ease;
+}
 .pub-header p a:hover {
   letter-spacing: 0.5px;
-  transition: 0.3s ease;
+  color: #0060fb;
+  transition: 0.2s ease;
 }
 .pub-header i {
   margin-left: 7px;
@@ -401,6 +412,12 @@ span {
 .pub-contact a {
   color: white;
   margin-right: 20px;
+  transition: 0.2s ease;
+}
+.pub-contact a:hover{
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  transition: 0.2s ease;
 }
 .pub-contact i {
   margin-right: 7px;
@@ -656,7 +673,7 @@ span {
   
 }
 .end-pub-items{
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 
 
@@ -694,6 +711,22 @@ span {
   color: #011b44;
   display: block;
 }
+.last-pubs-content {
+  width: 900px;
+  color: #011b44;
+  display: flex;
+}
+.last-pubs-content a{
+  color: #011b44;
+  margin-right: 25px;
+  transition: 0.2s ease;
+  width: 600px;
+}
+.last-pubs-content a:hover{
+  color: #0060fb;
+  letter-spacing: 0.2px;
+  transition: 0.2s ease;
+}
 .pubs-content h3 {
   margin-bottom: 10px;
   color: #011b44;
@@ -701,6 +734,10 @@ span {
 .pubs-content p{
   font-weight: 300;
   color: #011b44;
+}
+.pubs-content a:hover{
+  color: #0060fb;
+  transition: 0.2s ease;
 }
 
 
