@@ -899,3 +899,159 @@ span {
   letter-spacing: 0.5px;
   transition: 0.2s ease;
 }
+.header-image i{
+  display: none;
+    
+}
+
+
+@media (max-width: 400px){
+  .first-half{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  
+  }
+  .second-half {
+    display: none;
+
+  }
+  .header-image img{
+    width: 50px;
+  }
+  .header-image i{
+    margin-left: 150px;
+    display: block;
+   
+    font-size: 22px;
+    color: white;
+
+  }
+  .second-intro h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .second-intro p{
+    margin-bottom: 10px;
+  }
+  .second-intro button{
+    margin-bottom: 60px;
+  }
+  .bio-text {
+    text-align: center;
+    padding: 70px 20px;
+  }
+  .bio-text h3{
+    font-size: 20px;
+  }
+  .speech{
+    display: block;
+    padding-bottom: 40px;
+  }
+  .speech-image{
+    padding: 0px 40px;
+    margin: 0;
+  }
+  .speech-other{
+    text-align: center;
+    padding: 20px 20px;
+    width: 100%;
+
+  }
+  .speech-other button{
+    display: none;
+  }
+  .events-header{
+    text-align: left;
+    padding: 10px 20px;
+  }
+  .event-list{
+    padding: 20px 20px;
+  }
+  .event1, .event2, .event3{
+    width: 340px;
+    margin-bottom: 30px;
+
+  }
+  .text-s{
+    margin-bottom: 50px;
+  }
+  .pub-header{
+    margin-bottom: 30px;
+  }
+  .publications{
+    padding: 0px 20px;
+  }
+  .pub-other{
+    margin-bottom: 50px;
+  }
+  .footer-content{
+    display: block;
+    padding: 20px;
+  }
+  .contact{
+    display: flex;
+    padding-bottom: 20px;
+  }
+  .contact p{
+    display: none;
+  }
+  .contact-buttons{
+    display: flex;
+  }
+  .resume-but, .contact-but{
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .mini-nav.active{
+    text-align: right;
+    
+    
+    
+    width: 250px;
+    position: fixed;
+    z-index: 2;
+    height: 100vh;
+    background-color: white;
+    transition: 0.2s ease;
+    transform: translateX(120px);
+
+  }
+  .mini-nav.inactive{
+    
+    transition: 0.2s ease;
+    transform: translateX(20px);
+
+  }
+
+  .mini-nav ul{
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 30px;
+  }
+  .mini-nav ul li{
+    margin-bottom: 30px;
+  }
+  .mini-nav a{
+    color: #011b44;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.2s ease;
+
+  }
+  .mini-nav a:hover{
+    font-weight: 700;
+    transition: 0.2s ease;
+    letter-spacing: 0.5px;
+  }
+  .mini-nav i{
+    color: #011b44;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-right: 30px;
+    background-color: transparent;
+  }
+ 
+
+
+}

@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css"
     />
+    <script src="code.js"></script>
 
     <title>Prof Atinuke Olushola Adebanji: A Goal Getter!</title>
   </head>
@@ -22,6 +23,7 @@
           <div class="header-image">
             <img src="/Images/header.png" />
             <h2>Hello!</h2>
+            <i class="fa fa-bars" aria-hidden="true" id="openButton" onclick="handleOpen()"></i>
           </div>
           <div class="second-intro">
             <h1>Prof <br />Atinuke Olushola Adebanji</h1>
@@ -42,7 +44,23 @@
               ><i class="fa fa-envelope" aria-hidden="true"></i
             ></a>
           </div>
+
+          
         </div>
+        <div class='mini-nav' id="mini-nav">
+          <i class="fa fa-times" aria-hidden="true" id="closeButton" onclick="handleClose()"></i>
+          <ul>
+            <li><a href="" class="active">Bio</a></li>
+            <li><a href="">Publications</a></li>
+            <li><a href="">Programs & Events</a></li>
+            <li><a href="">Get in Touch</a></li>
+            
+
+          </ul>
+
+        </div>
+
+
         <div class="second-half">
           <div class="cover-image">
             <div class="nav-bar">
