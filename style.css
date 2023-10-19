@@ -1098,8 +1098,8 @@ span {
   .event1,
   .event2,
   .event3 {
-    border-radius: 0;
-    min-width: 200px;
+    border-radius: 0px;
+    
     margin-bottom: 30px;
   }
   .text-s {
