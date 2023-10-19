@@ -43,6 +43,7 @@ span {
   margin: 0;
 }
 .header-image h2 {
+  color: #011b44;
   margin-left: 10px;
 }
 .second-half {
@@ -256,7 +257,7 @@ span {
 .event1 {
   background-position: center;
   background-size: cover;
-  background-image: url(/Images/event1.jpg);
+  background-image: url(/Images/wakanda.jpg);
   height: 300px;
   width: 100%;
   border-radius: 10px;
@@ -334,6 +335,7 @@ span {
 }
 .publications {
   color: #011b44;
+  align-items: center;
   padding: 40px 60px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -351,6 +353,10 @@ span {
 }
 .pub-header a {
   color: #011b44;
+  margin-bottom: 40px;
+}
+.pub-header p{
+  margin-bottom: 40px;
 }
 
 .pub-header-end .pub-header p a {
@@ -360,6 +366,14 @@ span {
 }
 .pub-header p {
   font-weight: 700;
+}
+.banner-image{
+  width: 100%;
+
+}
+.banner-image img{
+  border-radius: 20px;
+  box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 .pub-header p a {
   transition: 0.2s ease;
@@ -397,7 +411,7 @@ span {
 }
 
 .footer {
-  
+  align-items: center;
   height: 150px;
   background-color: #011b44;
 }
@@ -406,6 +420,7 @@ span {
   background-color: #011b44;
   align-items: center;
 }
+
 .footer-content {
   display: flex;
   padding: 40px 160px;
@@ -443,6 +458,7 @@ span {
 }
 .contact p {
   color: white;
+  margin: 0;
 }
 .contact h3 {
   font-size: 25px;
@@ -905,10 +921,15 @@ span {
   letter-spacing: 0.5px;
   transition: 0.2s ease;
 }
-.header-image i {
+.header-image-icon {
   display: none;
 }
-
+.pub-header-image-content{
+  display: none;
+}
+.new-nav{
+  display: none;
+}
 
 @media (max-width: 700px) {
   .cover {
@@ -916,6 +937,7 @@ span {
   }
 
   .first-half {
+    
     width: 100%;
     height: 100%;
   }
@@ -927,9 +949,94 @@ span {
   .header-image {
     align-items: center;
     width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  .header-image h2{
+    color: white;
+  }
+  .header-image-content{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+  }
+  .new-nav.active{
+    opacity: 1;
+    position: fixed;
+    z-index: 2;
+    height: 100vh;
+    transform: translateX(150px);
+    width: 230px;
+    display: block;
+    background-color: white;
+    transition: 0.3s ease;
+
+  }
+  .new-nav.inactive{
+    display: none;
+    opacity: 1;
+    position: fixed;
+    z-index: 2;
+    height: 100vh;
+    transform: translateX(400px);
+    width: 230px;
+    display: block;
+    background-color: white;
+    transition: 0.3s ease;
+
+  }
+  .new-nav ul{
+    padding: 15px;
+    list-style: none;
+    width: 100%;
+  }
+  .new-nav ul li{
+    margin-bottom: 20px;
+    width: 100%;
+    
+    
+    
+  }
+  .new-nav ul li a{
+    color: #011b44;
+    font-size: 18px;
+    transition:  0.2s ease;
+  }
+  .new-nav ul li:hover{
+    font-weight: 700;
+    transition:  0.2s ease;
+  }
+  .new-nav i{
+    color: #011b44;
+    font-size: 25px;
+    padding: 10px;
+  
+
+  }
+ .isactive{
+    font-weight: 700;
+  }
+  .pub-header-image-content{
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #011b44;
   }
   .header-image img {
     width: 50px;
+  }
+  
+  .header-image-icon {
+    display: flex;
+    color: white;
+    font-size: 25px;
+  }
+  .pub-header-image-icon {
+    display: flex;
+    color: white;
+    font-size: 25px;
   }
   .intro {
     width: 100vw;
@@ -982,6 +1089,7 @@ span {
     justify-content: center;
     padding: 20px;
     width: fit-content;
+    margin-bottom: 30px;
   }
   .event1,
   .event2,
@@ -1014,6 +1122,7 @@ span {
   }
   .contact {
     display: none;
+    align-items: center;
   }
   .contact p {
     display: none;
@@ -1217,6 +1326,16 @@ span {
 }
 .contact-icons{
   padding: 0px 20px;
+}
+.banner-image{
+  width: 300px;
+  margin-bottom: 40px;
+
+}
+.banner-image img{
+  width: 100%;
+  border-radius: 20px;
+  box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 

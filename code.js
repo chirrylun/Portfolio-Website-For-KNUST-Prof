@@ -106,18 +106,18 @@ _f1("shew").onclick = toggleShewContent;
 
 
 function handleOpen() {
-    const miniNav = document.getElementById("mini-nav");
+    const newNav = document.getElementById("new-nav");
     const openButton = document.getElementById("openButton");
     openButton.addEventListener("click", () => {
-        miniNav.classList.add("active"), miniNav.classList.remove("inactive"), console.log("opened");
+        newNav.classList.add("active"), newNav.classList.remove("inactive"), console.log("opened");
       });
 }
 
 function handleClose() {
-    const miniNav = document.getElementById("mini-nav");
+    const newNav = document.getElementById("new-nav");
     const closeButton = document.getElementById("closeButton");
     closeButton.addEventListener("click", () => {
-        miniNav.classList.remove("active"), miniNav.classList.add("inactive"), console.log("closed");
+        newNav.classList.remove("active"), newNav.classList.add("inactive"), console.log("closed");
       });
   
 }
