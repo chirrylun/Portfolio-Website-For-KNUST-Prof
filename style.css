@@ -995,16 +995,13 @@ span {
   .new-nav ul li{
     margin-bottom: 20px;
     width: 100%;
-    
-    
-    
   }
   .new-nav ul li a{
     color: #011b44;
     font-size: 18px;
     transition:  0.2s ease;
   }
-  .new-nav ul li:hover{
+  .new-nav ul li a:hover{
     font-weight: 700;
     transition:  0.2s ease;
   }
