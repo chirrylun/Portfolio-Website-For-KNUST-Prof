@@ -54,7 +54,7 @@ span {
 .cover-image {
   background-position: center;
   background-size: cover;
-  background-image: url(cover.jpg);
+  background-image: url("cover.jpg");
   width: 840px;
   height: 88vh;
 }
@@ -257,7 +257,7 @@ span {
 .event1 {
   background-position: center;
   background-size: cover;
-  background-image: url(/wakanda.jpg);
+  background-image: url("wakanda.jpg");
   height: 300px;
   width: 100%;
   border-radius: 10px;
@@ -265,7 +265,7 @@ span {
 .event2 {
   background-position: center;
   background-size: cover;
-  background-image: url(women.png);
+  background-image: url("women.png");
   height: 300px;
   width: 100%;
   border-radius: 10px;
@@ -274,7 +274,7 @@ span {
 .event3 {
   background-position: center;
   background-size: cover;
-  background-image: url(fef.jpg);
+  background-image: url("fef.jpg");
   height: 300px;
   width: 100%;
   border-radius: 10px;
