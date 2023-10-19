@@ -267,7 +267,7 @@ span {
 .event2 {
   background-position: center;
   background-size: cover;
-  background-image: url(/Images/event2\ \(2\).jpg);
+  background-image: url(/Images/women.png);
   height: 300px;
   width: 450px;
   border-radius: 10px;
@@ -276,7 +276,7 @@ span {
 .event3 {
   background-position: center;
   background-size: cover;
-  background-image: url(/Images/event2\ \(1\).jpg);
+  background-image: url(/Images/fef.jpg);
   height: 300px;
   width: 450px;
   border-radius: 10px;
@@ -376,6 +376,18 @@ span {
   letter-spacing: 0.2px;
   transition: 0.2s ease;
   color: #011b44;
+}
+.pub-link{
+  color: #011b44;
+}
+.pub-link a{
+  color: #011b44;
+}
+.pub-link a:hover{
+  color: #0060fb;
+}
+.pub-link :hover{
+  color: #0060fb;
 }
 
 .footer {
@@ -1072,6 +1084,10 @@ span {
     margin-right: 30px;
     background-color: transparent;
   }
+
+  .contact-nav{
+
+  }
  
 
 
@@ -1236,6 +1252,9 @@ span {
     margin-top: 20px;
     margin-right: 30px;
     background-color: transparent;
+  }
+  .contact-nav img{
+    display: none;
   }
  
 
