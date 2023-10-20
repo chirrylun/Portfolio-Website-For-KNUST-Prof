@@ -1247,6 +1247,10 @@ span {
 .pubs-content {
   width: 100%;
 }
+.pubs-content p{
+  margin-bottom: 15px;
+}
+
 .last-pubs-content {
   display: block;
   width: 100%;
