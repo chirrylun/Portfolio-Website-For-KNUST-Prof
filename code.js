@@ -121,3 +121,22 @@ function handleClose() {
       });
   
 }
+
+function handlepubOpen() {
+  const pubNewNav = document.getElementById("pub-new-nav");
+  const pubopenButton = document.getElementById("pubopenButton")
+  pubopenButton.addEventListener("click", () => {
+    pubNewNav.classList.add("active"), pubNewNav.classList.remove("inactive"), console.log("pub opened")
+  })
+}
+
+
+function handlepubClose() {
+  const pubNewNav = document.getElementById("pub-new-nav");
+  const pubcloseButton = document.getElementById("pubcloseButton")
+  pubcloseButton.addEventListener("click", () => {
+    pubNewNav.classList.remove("active"), pubNewNav.classList.add("inactive"), console.log("pub closed")
+  })
+}
+
+

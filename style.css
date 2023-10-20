@@ -936,7 +936,7 @@ span {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .cover {
     height: fit-content;
   }
@@ -967,16 +967,23 @@ span {
     align-items: center;
     padding: 20px 40px;
   }
+  .pub-header-image-content{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+  }
   .new-nav.active{
     opacity: 1;
     position: fixed;
     z-index: 2;
     height: 100vh;
-    transform: translateX(170px);
-    width: 230px;
+    transform: translateX(180px);
+    width: 270px;
     display: block;
     background-color: white;
-    transition: 0.3s ease;
+    transition: 0.3s all ease;
 
   }
   .new-nav.inactive{
@@ -989,11 +996,11 @@ span {
     width: 230px;
     
     background-color: white;
-    transition: 0.3s ease;
+    transition: 0.3s all ease;
 
   }
   .new-nav ul{
-    padding: 15px;
+    padding: 20px;
     list-style: none;
     width: 100%;
   }
@@ -1011,6 +1018,59 @@ span {
     transition:  0.2s ease;
   }
   .new-nav i{
+    color: #011b44;
+    font-size: 25px;
+    padding: 10px;
+  
+
+  }
+  .pub-new-nav.active{
+    margin-top: 550px;
+    margin-left: -50px;
+    opacity: 1;
+    position: fixed;
+    z-index: 2;
+    height: 100vh;
+    transform: translateX(180px);
+    width: 270px;
+    display: block;
+    background-color: white;
+    transition: 0.3s all ease;
+
+  }
+  .pub-new-nav.inactive{
+    margin-top: 550px;
+    
+    opacity: 0;
+    position: fixed;
+    z-index: 2;
+    height: 100vh;
+    transform: translateX(400px);
+    width: 230px;
+    
+    background-color: white;
+    transition: 0.3s all ease;
+
+  }
+  .pub-new-nav ul{
+    padding: 20px;
+    list-style: none;
+    width: 100%;
+  }
+  .pub-new-nav ul li{
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .pub-new-nav ul li a{
+    color: #011b44;
+    font-size: 18px;
+    transition:  0.2s ease;
+  }
+  .pub-new-nav ul li a:hover{
+    font-weight: 700;
+    transition:  0.2s ease;
+  }
+  .pub-new-nav i{
     color: #011b44;
     font-size: 25px;
     padding: 10px;
@@ -1099,6 +1159,7 @@ span {
   .event2,
   .event3 {
     border-radius: 0px;
+    width: 100%;
     
     margin-bottom: 30px;
   }
@@ -1357,7 +1418,7 @@ span {
   .event1,
   .event2,
   .event3 {
-    max-width: 350px;
+  
     border-radius: 0px; /* Adjust the font size as needed */
   }
   .text-s {
