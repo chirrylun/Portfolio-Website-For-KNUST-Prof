@@ -2,22 +2,31 @@ function _f(id) {
   return document.getElementById(id);
 }
 
+_f("show").onclick = toogleShowContent;
+
+function toogleShowContent() {
 let div = _f("maindiv");
 let show = _f("show");
 
-show.onclick = function () {
-  if (div.className == "cls") {
-    div.className = "";
-    show.innerHTML = "Show more...";
-  } else {
-    div.className = "cls";
-    show.innerHTML = "Show less...";
-  }
-};
+if (div.className == "cls") {
+  div.className = "";
+  show.innerHTML = "Show more...";
+} else {
+  div.className = "cls";
+  show.innerHTML = "Show less...";
+}
+}
+
+
 
 function _f1(id) {
   return document.getElementById(id);
 }
+
+
+
+// Attach the click event listener to the "shaw" element
+_f1("shaw").onclick = toggleShawContent;
 
 function toggleShawContent() {
   let div = _f1("maindiv-workshop");
@@ -32,28 +41,7 @@ function toggleShawContent() {
   }
 }
 
-// Attach the click event listener to the "shaw" element
-_f1("shaw").onclick = toggleShawContent;
 
-function _f1(id) {
-  return document.getElementById(id);
-}
-
-function toggleShawContent() {
-  let div = _f1("maindiv-workshop");
-  let shaw = _f1("shaw");
-
-  if (div.className === "cls1") {
-    div.className = "";
-    shaw.innerHTML = "Show more...";
-  } else {
-    div.className = "cls1";
-    shaw.innerHTML = "Show less...";
-  }
-}
-
-// Attach the click event listener to the "shaw" element
-_f1("shaw").onclick = toggleShawContent;
 
 function _f2(id) {
   return document.getElementById(id);
@@ -73,15 +61,18 @@ function toggleShiwContent() {
 }
 
 // Attach the click event listener to the "shaw" element
-_f1("shiw").onclick = toggleShiwContent;
+_f2("shiw").onclick = toggleShiwContent;
+
+
+
 
 function _f3(id) {
   return document.getElementById(id);
 }
 
 function toggleShewContent() {
-  let div = _f2("maindiv-research");
-  let shew = _f2("shew");
+  let div = _f3("maindiv-research");
+  let shew = _f3("shew");
 
   if (div.className === "cls3") {
     div.className = "";
@@ -93,7 +84,7 @@ function toggleShewContent() {
 }
 
 // Attach the click event listener to the "shaw" element
-_f1("shew").onclick = toggleShewContent;
+_f3("shew").onclick = toggleShewContent;
 
 function handleOpen() {
   const newNav = document.getElementById("new-nav");
