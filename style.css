@@ -257,14 +257,17 @@ span {
 .event-list button a {
   color: white;
 }
-.event1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("/Images/wakanda.jpg");
+.event-image{
+  
+  width: 100%;
+
+}
+.event-image img{
   height: 300px;
   width: 100%;
   border-radius: 10px;
 }
+
 .event2 {
   background-position: center;
   background-size: cover;
@@ -320,17 +323,17 @@ span {
 .text-s {
   color: white;
   font-weight: 200;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 .text-ss {
   color: white;
   font-weight: 200;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 .text-sss {
   color: white;
   font-weight: 200;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .text-p {
@@ -934,6 +937,10 @@ span {
   display: none;
   background-color: white;
 }
+.pub-new-nav{
+  display: none;
+  background-color: white;
+}
 
 
 @media (max-width: 800px) {
@@ -1167,26 +1174,19 @@ span {
     display: flex;
     flex-direction: column;
     padding: 0px;
-    width: 100%;
+    min-width: 350px;
     margin-bottom: 30px;
   }
   .event1,
   .event2,
   .event3 {
     border-radius: 0px;
-    width: 100%;
+   
+    min-width: 350px;
     
     margin-bottom: 30px;
   }
-  .text-s {
-    margin-bottom: 90px;
-  }
-  .text-ss {
-    margin-bottom: 80px;
-  }
-  .text-sss {
-    margin-bottom: 80px;
-  }
+  
 
   .pub-header {
     margin-bottom: 30px;
@@ -1422,6 +1422,15 @@ span {
   border-radius: 10px;
   box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.1);
 }
+.text-s {
+  margin-bottom: 20px;
+}
+.text-ss {
+  margin-bottom: 20px;
+}
+.text-sss {
+  margin-bottom: 20px;
+}
 
 
 }
@@ -1437,13 +1446,13 @@ span {
     border-radius: 0px; /* Adjust the font size as needed */
   }
   .text-s {
-    margin-bottom: 90px;
+    margin-bottom: 20px;
   }
   .text-ss {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .text-sss {
-    margin-bottom: 64px;
+    margin-bottom: 20px;
   }
   .event-list {
     justify-items: center;
