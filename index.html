@@ -31,7 +31,7 @@
           </div>
           
         </div>
-        <div class="new-nav inactive" id="new-nav">
+        <div class="new-nav" id="new-nav">
           <i class="fa fa-times" aria-hidden="true" id="closeButton" onclick="handleClose()"></i>
           <ul>
             <li><a href="/index.html" class="isactive">My Bio</a></li>
@@ -151,9 +151,7 @@
 
         <div class="event-list">
           <div class="event1">
-            <div class="event-image">
-              <img src="/Images/wakanda.jpg">
-            </div>
+            
             <div class="text">
               <h3>DigitALL</h3>
               <p class="text-b">International Women's Day.</p>
@@ -165,6 +163,7 @@
             </div>
           </div>
           <div class="event2">
+            
             <div class="text">
               <h3>USAID</h3>
               <p class="text-b">US Agency for International Development</p>
@@ -176,6 +175,7 @@
             </div>
           </div>
           <div class="event3">
+            
             <div class="text">
               <h3>Financial Economics Forum</h3>
               <p class="text-b">Keynote Speaker</p>
@@ -264,5 +264,16 @@
         </div>
       </div>
     </section>
+    <script>
+      document.addEventListener("click", function (event) {
+      const newNav = document.getElementById("new-nav");
+
+      if (newNav.classList.contains("active") && !newNav.contains(event.target) && event.target !== openButton) {
+        newNav.classList.remove("active");
+        newNav.classList.add("inactive");
+        console.log("closed from outside");
+      }
+    });
+    </script>
   </body>
 </html>

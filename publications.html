@@ -366,7 +366,17 @@
           </div>
         </div>
       </div>
-
+      <script>
+        document.addEventListener("click", function (event) {
+        const pubnewNav = document.getElementById("pub-new-nav");
+  
+        if (pubnewNav.classList.contains("active") && !pubnewNav.contains(event.target) && event.target !== pubopenButton) {
+          pubnewNav.classList.remove("active");
+          pubnewNav.classList.add("inactive");
+          console.log("closed from outside");
+        }
+      });
+      </script>
     </section>
   </body>
 </html>

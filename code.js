@@ -102,6 +102,11 @@ _f1("shew").onclick = toggleShewContent;
 
 
 
+document.body.addEventListener("click", function() {
+
+    console.log("closed from outside");
+  
+});
 
 
 
@@ -138,5 +143,4 @@ function handlepubClose() {
     pubNewNav.classList.remove("active"), pubNewNav.classList.add("inactive"), console.log("pub closed")
   })
 }
-
 

@@ -257,17 +257,14 @@ span {
 .event-list button a {
   color: white;
 }
-.event-image{
-  
-  width: 100%;
-
-}
-.event-image img{
+.event1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/Images/wakanda.jpg");
   height: 300px;
   width: 100%;
   border-radius: 10px;
 }
-
 .event2 {
   background-position: center;
   background-size: cover;
@@ -1032,7 +1029,7 @@ span {
 
   }
   .pub-new-nav.active{
-    margin-top: 550px;
+    margin-top: 570px;
     margin-left: -50px;
     opacity: 1;
     position: fixed;
@@ -1442,9 +1439,14 @@ span {
   .event1,
   .event2,
   .event3 {
-  
-    border-radius: 0px; /* Adjust the font size as needed */
+    border-radius: 0px;
+   
+    width: 350px;
+    
+    margin-bottom: 30px;
+    
   }
+  
   .text-s {
     margin-bottom: 20px;
   }
