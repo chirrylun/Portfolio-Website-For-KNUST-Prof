@@ -264,16 +264,21 @@
         </div>
       </div>
     </section>
+    
     <script>
       document.addEventListener("click", function (event) {
-      const newNav = document.getElementById("new-nav");
+  const newNav = document.getElementById("new-nav");
 
-      if (newNav.classList.contains("active") && !newNav.contains(event.target) && event.target !== openButton) {
-        newNav.classList.remove("active");
-        newNav.classList.add("inactive");
-        console.log("closed from outside");
-      }
-    });
+  if (
+    newNav.classList.contains("active") &&
+    !newNav.contains(event.target) &&
+    event.target !== openButton
+  ) {
+    newNav.classList.remove("active");
+    newNav.classList.add("inactive");
+    console.log("closed from outside");
+  }
+});
     </script>
   </body>
 </html>

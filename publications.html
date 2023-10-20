@@ -18,44 +18,35 @@
   </head>
   <body>
     <section class="reach-out">
-      <div class="pub-header-image-content">
-        <div class="header-image">
-          <img src="header.png" />
-          <h2>Hello!</h2>
-        </div>
-        
-        <div class="pub-header-image-icon">
-          <i class="fa fa-bars" aria-hidden="true" id="pubopenButton" onclick="handlepubOpen()"></i>
-          
-        </div>
-
-        <div class="pub-new-nav inactive" id="pub-new-nav">
-          <i class="fa fa-times" aria-hidden="true" id="pubcloseButton" onclick="handlepubClose()"></i>
-          <ul>
-            <li><a href="/index.html">My Bio</a></li>
-            <li><a href="/publications.html" class="isactive">My Publications</a></li>
-            <li><a href="/events.html">Programs & Events</a></li>
-            <li><a href="contact.html">Get in Touch</a></li>
-          </ul>
-        </div>
-        
-        
-        
-      </div>
+      
       
       
       
       
      
+      <nav>
+        <a href="index.html"><img src="header.png"> </a>
+        <div class="nav-links inactive" id="pub-new-nav">
+          <i class="fa fa-times closeButton" aria-hidden="true" id="pubcloseButton" onclick="handlepubClose()"></i>
+          <ul>
+            <li><a href="index.html">My Bio</a> </li>
+            <li><a href="publications.html" class="isactive">Publications</a> </li>
+            <li><a href="events.html">Programs & Events</a> </li>
+            <li><a href="contact.html">Get in Touch</a> </li>
 
-      
+          </ul>
+
+        </div>
+        <i class="fa fa-bars openButton" aria-hidden="true" id="pubopenButton" onclick="handlepubOpen()"></i>
+      </nav>
 
 
       <div class="contact-nav">
-
+        <img src="header.png" />
         
+        <div class="nav-links">
         <ul>
-          <img src="header.png" />
+          
           <li>
             <a href="index.html"
               ><i class="fa fa-address-card-o" aria-hidden="true"></i>My Bio</a
@@ -78,6 +69,7 @@
             >
           </li>
         </ul>
+      </div>
       </div>
       
       
@@ -366,17 +358,22 @@
           </div>
         </div>
       </div>
-      <script>
-        document.addEventListener("click", function (event) {
-        const pubnewNav = document.getElementById("pub-new-nav");
-  
-        if (pubnewNav.classList.contains("active") && !pubnewNav.contains(event.target) && event.target !== pubopenButton) {
-          pubnewNav.classList.remove("active");
-          pubnewNav.classList.add("inactive");
-          console.log("closed from outside");
-        }
-      });
-      </script>
+      
     </section>
+    <script>
+      document.addEventListener("click", function (event) {
+  const pubnewNav = document.getElementById("pub-new-nav");
+
+  if (
+    pubnewNav.classList.contains("active") &&
+    !pubnewNav.contains(event.target) &&
+    event.target !== pubopenButton
+  ) {
+    pubnewNav.classList.remove("active");
+    pubnewNav.classList.add("inactive");
+    console.log("closed from outside");
+  }
+});
+    </script>
   </body>
 </html>

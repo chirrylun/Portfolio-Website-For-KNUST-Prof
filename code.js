@@ -1,5 +1,3 @@
-
-
 function _f(id) {
   return document.getElementById(id);
 }
@@ -97,50 +95,44 @@ function toggleShewContent() {
 // Attach the click event listener to the "shaw" element
 _f1("shew").onclick = toggleShewContent;
 
-
-
-
-
-
-document.body.addEventListener("click", function() {
-
-    console.log("closed from outside");
-  
-});
-
-
-
 function handleOpen() {
-    const newNav = document.getElementById("new-nav");
-    const openButton = document.getElementById("openButton");
-    openButton.addEventListener("click", () => {
-        newNav.classList.add("active"), newNav.classList.remove("inactive"), console.log("opened");
-      });
+  const newNav = document.getElementById("new-nav");
+  const openButton = document.getElementById("openButton");
+  openButton.addEventListener("click", () => {
+    newNav.classList.add("active"),
+      newNav.classList.remove("inactive"),
+      console.log("opened");
+  });
 }
 
 function handleClose() {
-    const newNav = document.getElementById("new-nav");
-    const closeButton = document.getElementById("closeButton");
-    closeButton.addEventListener("click", () => {
-        newNav.classList.remove("active"), newNav.classList.add("inactive"), console.log("closed");
-      });
-  
+  const newNav = document.getElementById("new-nav");
+  const closeButton = document.getElementById("closeButton");
+  closeButton.addEventListener("click", () => {
+    newNav.classList.remove("active"),
+      newNav.classList.add("inactive"),
+      console.log("closed");
+  });
 }
 
 function handlepubOpen() {
   const pubNewNav = document.getElementById("pub-new-nav");
-  const pubopenButton = document.getElementById("pubopenButton")
+  const pubopenButton = document.getElementById("pubopenButton");
   pubopenButton.addEventListener("click", () => {
-    pubNewNav.classList.add("active"), pubNewNav.classList.remove("inactive"), console.log("pub opened")
-  })
+    pubNewNav.classList.add("active"),
+      pubNewNav.classList.remove("inactive"),
+      console.log("pub opened");
+  });
 }
-
 
 function handlepubClose() {
   const pubNewNav = document.getElementById("pub-new-nav");
-  const pubcloseButton = document.getElementById("pubcloseButton")
+  const pubcloseButton = document.getElementById("pubcloseButton");
   pubcloseButton.addEventListener("click", () => {
-    pubNewNav.classList.remove("active"), pubNewNav.classList.add("inactive"), console.log("pub closed")
-  })
+    pubNewNav.classList.remove("active"),
+      pubNewNav.classList.add("inactive"),
+      console.log("pub closed");
+  });
 }
+
 
