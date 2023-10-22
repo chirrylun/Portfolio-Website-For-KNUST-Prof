@@ -2,7 +2,6 @@ function _f(id) {
   return document.getElementById(id);
 }
 
-_f("show").onclick = toogleShowContent;
 
 function toogleShowContent() {
 let div = _f("maindiv");
@@ -17,29 +16,9 @@ if (div.className == "cls") {
 }
 }
 
+_f("show").onclick = toogleShowContent;
 
 
-function _f1(id) {
-  return document.getElementById(id);
-}
-
-
-
-// Attach the click event listener to the "shaw" element
-_f1("shaw").onclick = toggleShawContent;
-
-function toggleShawContent() {
-  let div = _f1("maindiv-workshop");
-  let shaw = _f1("shaw");
-
-  if (div.className === "cls1") {
-    div.className = "";
-    shaw.innerHTML = "Show more...";
-  } else {
-    div.className = "cls1";
-    shaw.innerHTML = "Show less...";
-  }
-}
 
 
 

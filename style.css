@@ -852,7 +852,7 @@ span {
 }
 #maindiv {
   width: 1000px;
-  height: 200px;
+  height: 210px;
   overflow: hidden;
   list-style: circle;
   padding: 20px 20px;
@@ -860,14 +860,14 @@ span {
   transition: 0.6s ease;
 }
 #maindiv.cls {
-  height: 1050px;
+  height: 780px;
   margin-top: 20px;
   padding: 20px 20px;
   transition: 0.6s ease;
 }
 #maindiv-workshop {
   width: 1000px;
-  height: 180px;
+  height: 200px;
   overflow: hidden;
   list-style: circle;
   padding: 20px 20px;
@@ -875,14 +875,14 @@ span {
   transition: 0.6s ease;
 }
 #maindiv-workshop.cls1 {
-  height: 1050px;
+  height: 850px;
   margin-top: 20px;
   padding: 20px 20px;
   transition: 0.6s ease;
 }
 #maindiv-grants {
   width: 1000px;
-  height: 190px;
+  height: 280px;
   overflow: hidden;
   list-style: circle;
   padding: 20px 20px;
@@ -890,14 +890,14 @@ span {
   transition: 0.6s ease;
 }
 #maindiv-grants.cls2 {
-  height: 2100px;
+  height: 1730px;
   margin-top: 20px;
   padding: 20px 20px;
   transition: 0.6s ease;
 }
 #maindiv-research {
   width: 1000px;
-  height: 305px;
+  height: 290px;
   overflow: hidden;
   list-style: circle;
   padding: 20px 20px;
@@ -905,7 +905,7 @@ span {
   transition: 0.6s ease;
 }
 #maindiv-research.cls3 {
-  height: 1250px;
+  height: 950px;
   margin-top: 20px;
   padding: 20px 20px;
   transition: 0.6s ease;
@@ -1230,7 +1230,7 @@ nav{
 }
 nav{
   display: flex;
-  padding: 20px;
+  padding: 20px 40px;
   justify-content: space-between;
   align-items: center;
   background-color: #011b44;
@@ -1310,7 +1310,7 @@ nav .closeButton{
   transition: 0.6s ease;
 }
 #maindiv.cls {
-  height: 2320px;
+  height: 1620px;
   margin-top: 20px;
   padding: 20px 20px;
   transition: 0.6s ease;
@@ -1321,7 +1321,7 @@ nav .closeButton{
 
 #maindiv-workshop {
   width: 100%;
-  height: 240px;
+  height: 260px;
   overflow: hidden;
   list-style: circle;
   padding: 20px 20px;
@@ -1333,7 +1333,7 @@ nav .closeButton{
 
 }
 #maindiv-workshop.cls1 {
-  height: 2900px;
+  height: 1950px;
   margin-top: 20px;
   padding: 20px 20px;
   transition: 0.6s ease;
@@ -1341,7 +1341,7 @@ nav .closeButton{
 
 #maindiv-grants {
   width: 100%;
-  height: 470px;
+  height: 430px;
   overflow: hidden;
   list-style: circle;
   padding: 20px 20px;
@@ -1352,7 +1352,7 @@ nav .closeButton{
   padding: 0px 20px;
 }
 #maindiv-grants.cls2 {
-  height: 5650px;
+  height: 3900px;
   margin-top: 20px;
   padding: 20px 20px;
   transition: 0.6s ease;
@@ -1364,7 +1364,7 @@ nav .closeButton{
 
 #maindiv-research {
   width: 100%;
-  height: 245px;
+  height: 250px;
   overflow: hidden;
   list-style: circle;
   padding: 20px 20px;
@@ -1375,7 +1375,7 @@ nav .closeButton{
   padding: 0px 20px;
 }
 #maindiv-research.cls3 {
-  height: 2780px;
+  height: 1970px;
   margin-top: 20px;
   padding: 20px 20px;
   transition: 0.6s ease;
