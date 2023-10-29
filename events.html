@@ -82,7 +82,7 @@
       
       <div class="top-events-text">
         <h3>
-         The Statistics department was awarded the overall best department for two consecutive years.
+         The Mathematics department was awarded the overall best department for two consecutive years.
         </h3>
       </div>
 
@@ -120,7 +120,7 @@
 
       <div class="events-text">
         <h3>
-          7th Regional College on Modelling, Simulation, and Optimization. Training course organized by the Institute of Mathematical Sciences, Ghana, and sponsored by the Abdus Salam International Centre for Theoretical Physics.
+          Transforming Evidence to Action, Capacity in Higher Education (TEACH) capacity building workshop for the Regional Transport Research and Education Centre, Kumasi (TRECK).
         </h3>
       </div>
 
@@ -248,7 +248,7 @@
 
       <div class="events-text">
         <h3>
-          XXIXth International Biometric Conference, July 8-12, 2018; Barcelona Convention Centre, Barcelona, Spain.
+         Global LISA 2020 Sustainability Symposium, KNUST, 01-05 May, 2022.
         </h3>
       </div>
 
@@ -368,7 +368,7 @@
 
       <div class="events-text">
         <h3>
-          Geospatial modeling of the effects of traffic noise exposure along selected road corridors in Kumasi (2021-2023)
+          Building Capacity of Female Scientists in Data Analysis for Decision making and Strategic Planning.
         </h3>
       </div>
 
@@ -428,7 +428,7 @@
 
       <div class="events-text">
         <h3>
-          2022: LISA 2020 grant (USD 35,000) to host the Global LISA Sustainability Symposium at KNUST, Kumasi.
+         KNUST-LISA Training in Statistical Data Analysis and Data Visualization workshop for fifth and sixth year Optometry and Visual Science students, KNUST; 20-24 January 2020.
         </h3>
       </div>
 
@@ -477,6 +477,62 @@
       <p class="end-view-more" id="shiw">Show more...</p>
     </div>
 
+
+
+
+    <div class="grants-header" id="projects">
+      <div class="pub-header">
+        <div class="pub-start">
+          <h2>Projects</h2>
+          <hr class="grants" />
+        </div>
+        <div class="pub-body">
+          <div class="award-image">
+            <img src="grant.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="events-text">
+        <h3>
+          2022: LISA 2020 grant (USD 35,000) to host the Global LISA Sustainability Symposium at KNUST, Kumasi.
+        </h3>
+      </div>
+
+      <div class="event-points-end">
+        <ul id="maindiv-projects">
+          <li>2022: Co-PI and resource person at the Summer School on Application of Biomathematics and Biostatistics on Genomics and Epidemiology, at Eldoret, Kenya, from 12th to 24th March 2023. Project funded by Volkswagen Foundation (€86,000).</li>
+          <li>2022: Organizer of Global LISA 2020 Sustainability Symposium at KNUST from 01 to 05 May 2022. LISA 2020 grant (USD 35,000).
+          </li>
+          <li>2021: Co-PI, Technical University of Munich Global Incentive Fund 2021  (€10,000) for faculty Exchange in collaboration with Prof Aurelien Tellier and Prof Olivier Pamen.
+          </li>
+          <li>2020: International Statistical Institute (ISI) USD 8,300 grant for KNUST-LISA Regional Symposium and World Statistics Day, October 2020.
+          </li>
+          <li>2020: Transforming Evidence to Action Capacity in Higher Education
+            (TEACH) Fund of Eleven Thousand US Dollars (USD 11,000) for staff
+            Students‘ capacity building, in collaboration with the Regional Transport
+            Research and Education Centre, Kumasi (TRECK); July 2020 to June 2022. 
+            </li>
+          <li>2019: Lead facilitator KNUST-LISA USD 75,000 Building Capacity of Female Scientists in Data Analysis for Decision making and Strategic planning USAID/University of Colorado Boulder, USA.
+          </li>
+          <li>2019: CAL BANK Four Thousand Ghana Cedis (Gh₵ 4,000) Grant for WiSTEM-KNUST 2019 Girls Camp.
+          </li>
+          <li>2019: CAL BANK Four Thousand Ghana Cedis (Gh₵ 4,000) Grant for WiSTEM-KNUST 2019 Girls Camp.
+          </li>
+          <li>2019: Vodafone Twenty five Thousand Ghana Cedis (Gh₵ 25,000) Grant for 2019 KNUST-WiSTEMGh Senior High School Girls’ STEM Camp, July 19-24, 2019.</li>
+          <li>2018: Vodafone Thirty Thousand Ghana Cedis (Gh₵ 30,000) Grant for the launch of Women in Science, Technology, Engineering and Mathematics, Ghana (WiSTEMGh).</li>
+          
+        </ul>
+        
+        
+      </div>
+      <br />
+      <p class="end-view-more" id="shel">Show more...</p>
+    </div>
+
+
+
+
       <div class="footer">
         <div class="footer-content">
           <div class="contact">
@@ -487,7 +543,7 @@
           <div class="contact-buttons">
             <button class="resume-but">
               <a
-                href="https://drive.google.com/file/d/1tbiWNqHwxVhIlXiDvGRuiCobQc7Oul7d/view?usp=share_link"
+                href="https://docs.google.com/document/d/e/2PACX-1vS4m4pme47iImfci-_RSb06vqrj-1fS6LoGF0SXYUi0W5N1ltAEJQuXvU4wtptNqQ/pub"
                 >VIEW MY RESUME</a
               >
             </button>
@@ -577,6 +633,31 @@ function toggleShewContent() {
 
 // Attach the click event listener to the "shaw" element
 _f3("shew").onclick = toggleShewContent;
+
+
+
+function _f4(id) {
+  return document.getElementById(id);
+}
+
+function toggleShelContent() {
+  let div = _f4("maindiv-projects");
+  let shel = _f4("shel");
+
+  if (div.className === "cls4") {
+    div.className = "";
+    console.log("opened");
+    shel.innerHTML = "Show more...";
+  } else {
+    div.className = "cls4";
+    shel.innerHTML = "Show less...";
+  }
+}
+
+// Attach the click event listener to the "shaw" element
+_f4("shel").onclick = toggleShelContent;
+
+
 
 
 function _f(id) {

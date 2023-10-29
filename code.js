@@ -65,6 +65,30 @@ function toggleShewContent() {
 // Attach the click event listener to the "shaw" element
 _f3("shew").onclick = toggleShewContent;
 
+
+function _f4(id) {
+  return document.getElementById(id);
+}
+
+function toggleShelContent() {
+  let div = _f4("maindiv-projects");
+  let shel = _f4("shel");
+
+  if (div.className === "cls4") {
+    div.className = "";
+    shel.innerHTML = "Show more...";
+  } else {
+    div.className = "cls4";
+    shel.innerHTML = "Show less...";
+  }
+}
+
+// Attach the click event listener to the "shaw" element
+_f4("shel").onclick = toggleShelContent;
+
+
+
+
 function handleOpen() {
   const newNav = document.getElementById("new-nav");
   const openButton = document.getElementById("openButton");
