@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
 const images = [
   'url("/Images/cover.jpg")',
-  'url("/gradimage.jpg")',
+  'url("/Images/gradimage.jpg")',
   // Add more image URLs as needed
 ];
 
