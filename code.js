@@ -1,3 +1,81 @@
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+const images = [
+  'url("/Images/cover.jpg")',
+  'url("/gradimage.jpg")',
+  // Add more image URLs as needed
+];
+
+let currentImageIndex = 0;
+const slideshowContainer = document.getElementById('background-slideshow');
+
+function createSlide(imageUrl) {
+  const slide = document.createElement('div');
+  slide.classList.add('slide');
+  slide.style.backgroundImage = imageUrl;
+  return slide;
+}
+
+function nextImage() {
+  const currentSlide = slideshowContainer.querySelector('.slide.active');
+  const nextImageIndex = (currentImageIndex + 1) % images.length;
+  const nextSlide = createSlide(images[nextImageIndex]);
+  
+  slideshowContainer.appendChild(nextSlide);
+  
+  setTimeout(() => {
+    nextSlide.classList.add('active');
+    if (currentSlide) {
+      currentSlide.classList.remove('active');
+    }
+  }, 50);
+
+  setTimeout(() => {
+    if (currentSlide) {
+      slideshowContainer.removeChild(currentSlide);
+    }
+  }, 1000);
+
+  currentImageIndex = nextImageIndex;
+}
+
+// Initialize the slideshow
+slideshowContainer.appendChild(createSlide(images[currentImageIndex]));
+slideshowContainer.firstChild.classList.add('active');
+
+// Change image every 7 seconds
+setInterval(nextImage, 7000);
+
+
+
+  const playButton = document.getElementById('playButton');
+  const videoThumbnail = document.getElementById('videoThumbnail');
+  const overlay = document.querySelector('.overlay');
+  
+  playButton.addEventListener('click', function(e) {
+    e.preventDefault(); // This line is crucial
+    
+    // Replace this with your actual YouTube video ID
+    const videoId = '3wncVnh9a8M';
+    
+    // Create YouTube iframe
+    const iframe = document.createElement('iframe');
+    iframe.setAttribute('width', '100%');
+    iframe.setAttribute('height', '100%');
+    iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1`);
+    iframe.setAttribute('frameborder', '0');
+    iframe.setAttribute('allow', 'autoplay; encrypted-media');
+    iframe.setAttribute('allowfullscreen', '');
+    
+    // Replace thumbnail and overlay with iframe
+    videoThumbnail.innerHTML = '';
+    videoThumbnail.appendChild(iframe);
+    overlay.style.display = 'none';
+  });
+});
+
 function _f(id) {
   return document.getElementById(id);
 }
@@ -128,5 +206,3 @@ function handlepubClose() {
       console.log("pub closed");
   });
 }
-
-

@@ -47,16 +47,41 @@ span {
   margin-left: 10px;
 }
 .second-half {
-  background-image: linear-gradient(to top, #0060fb 0%, #2363cb 100%);
+ 
   width: 55vw;
   height: 88vh;
 }
 .cover-image {
+  position: relative;
+  width: 100%; /* Change from 840px to 100% */
+  height: 100%; /* Change from 88vh to 100% */
+  overflow: hidden;
+}
+#background-slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-position: center;
   background-size: cover;
-  background-image: url("/Images/cover.jpg");
-  width: 840px;
-  height: 88vh;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
 }
 .cover-image img {
   width: 100%;
@@ -125,6 +150,7 @@ span {
   color: white;
 }
 .nav-bar {
+  position: absolute;
   padding-top: 10px;
   display: flex;
   align-items: center;
@@ -158,7 +184,7 @@ span {
 }
 .guide {
   padding: 500px 60px;
-  display: flex;
+  display: none;
   align-items: center;
 }
 .guide h2 {
@@ -187,7 +213,7 @@ span {
   background-color: white;
 }
 .bio-text {
-  text-align: left;
+  text-align: center;
   color: #011b44;
 
   width: 900px;
@@ -200,6 +226,72 @@ span {
   font-weight: 300;
   padding-bottom: 30px;
 }
+.video-section {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+
+.video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.overlay a i {
+  color: white;
+  font-size: 60px;
+  transition: 0.3s ease;
+
+}
+
+.play-btn {
+  width: 80px;
+  height: 80px;
+  
+  cursor: pointer;
+}
+.overlay a i:hover {
+  color: #0060fb;
+  transition: 0.3s ease;
+}
+
+.overlay h2 {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .speech {
   color: #011b44;
   display: flex;
@@ -338,7 +430,7 @@ span {
 }
 .publications {
   color: #011b44;
-  align-items: center;
+  align-items: top;
   padding: 40px 60px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -621,8 +713,15 @@ span {
 }
 .pub1,
 .pub2,
-.pub3 {
+.pub3, .pub4 {
   margin-bottom: 30px;
+  display: none;
+}
+
+.pub5, .pub6, .pub7, .pub8, .pub9, .pub10 {
+  margin-bottom: 30px;
+  
+
 }
 .top-pubs {
   padding-top: 30px;
@@ -1010,7 +1109,19 @@ nav{
     align-items: center;
     padding: 20px 40px;
   }
-  
+  .video-section {
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    margin-top: 50px;
+  }
+  .overlay h2 {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 600;
+  }
   .new-nav.active{
     opacity: 1;
     position: fixed;
@@ -1504,7 +1615,22 @@ nav .closeButton{
     margin-bottom: 30px;
     
   }
-  
+  .video-section {
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    margin-top: 50px;
+  }
+  .overlay h2 {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+  }
+  .journey{
+    margin-top: 10px;
+  }
   .text-s {
     margin-bottom: 20px;
   }
