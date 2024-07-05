@@ -50,29 +50,33 @@ setInterval(nextImage, 7000);
 
 
 
-  const playButton = document.getElementById('playButton');
+const playButton = document.getElementById('playButton');
   const videoThumbnail = document.getElementById('videoThumbnail');
   const overlay = document.querySelector('.overlay');
+  const videoDescription = document.querySelector('.video-description');
   
   playButton.addEventListener('click', function(e) {
     e.preventDefault(); // This line is crucial
     
     // Replace this with your actual YouTube video ID
+    
     const videoId = '3wncVnh9a8M';
+    const startTime = 3288;
     
     // Create YouTube iframe
     const iframe = document.createElement('iframe');
     iframe.setAttribute('width', '100%');
     iframe.setAttribute('height', '100%');
-    iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1`);
+    iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?start=${startTime}&autoplay=1`);
     iframe.setAttribute('frameborder', '0');
     iframe.setAttribute('allow', 'autoplay; encrypted-media');
     iframe.setAttribute('allowfullscreen', '');
     
-    // Replace thumbnail and overlay with iframe
     videoThumbnail.innerHTML = '';
     videoThumbnail.appendChild(iframe);
     overlay.style.display = 'none';
+    
+    videoDescription.style.display = 'block';
   });
 });
 
