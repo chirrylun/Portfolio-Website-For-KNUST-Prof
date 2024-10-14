@@ -98,26 +98,44 @@ span {
   font-weight: 300;
   padding-bottom: 20px;
 }
-.second-intro button a {
+
+
+
+.pb1 a {
   color: #011b44;
 }
-.second-intro button {
+.pb2 a {
+  color: white;
+}
+.pb1 {
   background-color: white;
 
   border: none;
   outline: none;
-  padding: 13px;
-  border-radius: 30px;
+  padding: 8px;
+  border-radius: 10px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.1),
     5px 5px 10px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease;
   margin-bottom: 90px;
 }
-.second-intro button:hover {
-  letter-spacing: 0.5px;
+.pb2 {
+  background-color: #011b44;
+  
+  border-width: 0.5;
+  border-color: white;
+  
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  
+  transition: 0.3s ease;
+  margin-bottom: 90px;
 }
+
 .social {
   display: flex;
   align-items: center;
@@ -226,6 +244,11 @@ span {
   font-weight: 300;
   padding-bottom: 30px;
 }
+.profile-buttons {
+  display: flex;
+  gap: 20px;
+}
+
 .video-section {
   width: 100%;
   max-width: 800px; /* Adjust as needed */
